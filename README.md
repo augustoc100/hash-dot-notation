@@ -1,5 +1,5 @@
 # hash-dot-notation
-insted of use
+instead of use
 ```ruby
 hash = {foo: 'foo'}
 hash[:foo] # => 'foo'
