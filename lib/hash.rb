@@ -1,5 +1,5 @@
 class Hash
   def method_missing(method)
-    fetch(method)
+    self[method.to_s] || fetch(method)
   end
 end

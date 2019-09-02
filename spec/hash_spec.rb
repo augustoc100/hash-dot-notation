@@ -21,13 +21,13 @@ describe Hash do
     context 'quando as chaves são strings' do
       it 'retorna o atributo'do
         subject = {
-          "string1": "stringibute1",
-          "string2": "stringibute2",
-          "string3": "stringibute3",
-          "string4": 1432,
-          "string5": 50.09,
-          "string6": [1,2,3],
-          "string7": {foo: "foo"},
+          "string1" => "stringibute1",
+          "string2" => "stringibute2",
+          "string3" => "stringibute3",
+          "string4" => 1432,
+          "string5" => 50.09,
+          "string6" => [1,2,3],
+          "string7" => {foo: "foo"},
         }
 
         subject.each do |key, value|
