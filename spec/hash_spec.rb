@@ -40,7 +40,7 @@ describe Hash do
       it 'lance um erro'do
         subject = {attr: 'result'}
 
-        expect {subject.unexisted_method}.to raise_error KeyError
+        expect {subject.unexisted_method}.to raise_error NoMethodError
       end
     end
   end
