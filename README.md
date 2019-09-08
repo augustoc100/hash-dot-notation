@@ -6,7 +6,7 @@ hash[:foo] # => 'foo'
 #or 
 hash = {'foo' => 'foo'}
 hash['foo'] # => 'foo'
-#
+
 ```
 Use
 ```ruby
