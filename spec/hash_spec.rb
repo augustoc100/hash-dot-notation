@@ -30,6 +30,8 @@ describe Hash do
           "string7" => {foo: "foo"},
         }
 
+        subject.inspect
+
         subject.each do |key, value|
           expect(subject.send(key)).to eq value
         end
@@ -39,8 +41,9 @@ describe Hash do
     context 'quando o metodo não existe' do
       it 'lance um erro'do
         subject = {attr: 'result'}
+        subject.inspect
 
-        expect {subject.unexisted_method}.to raise_error NoMethodError
+        expect {subject.unexisted_method}.to raise_error NoMethodError, "undefined method unexisted_method for #{subject}"
       end
     end
   end
