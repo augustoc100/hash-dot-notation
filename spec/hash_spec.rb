@@ -1,4 +1,4 @@
-require 'hash'
+require 'hash_dot_notation'
 
 describe Hash do
   context 'quando acesso os atributos de um hash usando dot notation'do
